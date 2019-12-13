@@ -31,20 +31,27 @@ def clean_data(df):
     cleaned dataset with seperated columns for each cateogry 
     
     """
-    
+    #Split the values in the categories column on the ; character so that each value becomes a separate column
     categories = df['categories'].str.split(";" , expand=True)
+    #Use the first row of categories dataframe to create column names for the categories data.
     row = categories.iloc[[0]]
     category_colnames = [str(row[cat]).split('\n')[0].split()[1][0:-2] for cat in row]
+    #Rename columns of categories with new column names.
     categories.columns = category_colnames
     
+    #Iterate through the category columns in df to keep only the last character of each string (the 1 or 0). 
+    #For example, related-0 becomes 0, related-1 becomes 1. Convert the string to a numeric value.
     for column in categories:
     # set each value to be the last character of the string
         categories[column]= categories[column].astype(str).str[-1]
     # convert column from string to numeric
         categories[column] = categories[column].astype(int)
     
+    #Drop the categories column from the df dataframe since it is no longer needed.
+    #Concatenate df and categories data frames.
     df.drop('categories', axis=1, inplace=True)
     df = pd.concat([df,categories],axis=1)
+    # drop dupicates 
     df.drop_duplicates(keep=False,inplace=True) 
     
     return df
