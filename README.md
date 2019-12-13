@@ -11,19 +11,19 @@ The goal of this project is to apply my data engineering and software skills by 
 [Figure Eight](https://www.figure-eight.com/) is used for this project. It contains real messages that were sent during disaster events which will be used to develop a machine learning pipeline to categorize these events so that we can send the messages to an appropriate disaster relief agency.
  
  ## Files Descriptions:
- -1 **app:** 
- - *templates:* html files for the web pages . 
- - *run.py:* to run the flask app. 
+ ### -1 **app:** 
+ - **templates:** html files for the web pages . 
+ - **run.py:** to run the flask app. 
  
- -2 **data:**
- - *DisasterResponse.db:* the database the contain data table.
- - *disaster_categories.csv:* csv file contains the catogry names. 
- - *disaster_messages.csv:* csv file contains the messages with extra information. 
- - *process_data.py:* ETL python script to preprocess the data.
+ ### -2 **data:**
+ - **DisasterResponse.db:** the database the contain data table.
+ - **disaster_categories.csv:** csv file contains the catogry names. 
+ - **disaster_messages.csv:** csv file contains the messages with extra information. 
+ - **process_data.py:** ETL python script to preprocess the data.
  
- -3 **models:**
- - *train_classifier.py:* python script to build ml pipline and save the final model. 
-  - *classifier.pkl:* the saved model.
+ ### -3 **models:**
+ - **train_classifier.py:** python script to build ml pipline and save the final model. 
+  - **classifier.pkl:** the saved model.
  
  ## Instructions:
 1- Run the following commands in the project's root directory to set up your database and model.
@@ -38,6 +38,7 @@ The goal of this project is to apply my data engineering and software skills by 
 
 3- Go to http://0.0.0.0:3001/
 
+-----------------------------------------------------------------------------------------------------------------
  *This project is a part of Udacity's Data Science Nanodegree*
  
 
