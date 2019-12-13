@@ -35,6 +35,7 @@ def load_data(database_filepath):
     engine = create_engine('sqlite:///'+database_filepath)
     df = pd.read_sql_table('disaster_messages', engine)
     df = df.dropna(how='any',axis=0) 
+    # divide the data 
     X = df['message']
     Y = df.iloc[:,4:]
     category_names = Y.columns
