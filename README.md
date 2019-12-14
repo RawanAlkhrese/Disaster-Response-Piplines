@@ -2,7 +2,12 @@
 
 ## Prerequisites
 - **Python versions 3.0+**
-- **nltk:** need to download 3 necesasry packages: *punkt* , *wordnet* and *stopwords*
+- **nltk 3.4 :** need to download 3 necesasry packages: *punkt* , *wordnet* and *stopwords*
+- **pandas 0.23.4**
+- **numpy 1.15.4**
+- **skcikit-learn 0.20.1**
+- **sqlalchemy 1.2.15**
+- **pickle 0.7.5**
 
 ## Project Motivation:
 The goal of this project is to apply my data engineering and software skills by analyzing disaster dataset from [Figure Eight](https://www.figure-eight.com/). It is a web app where an emergency worker can input a new message and get classification results in several categories, it also display visualizations of the data.
