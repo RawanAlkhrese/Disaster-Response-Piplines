@@ -10,8 +10,7 @@
 - **pickle 0.7.5**
 
 ## Project Motivation:
-The goal of this project is to apply my data engineering and software skills by analyzing disaster dataset from [Figure Eight](https://www.figure-eight.com/). It is a web app where an emergency worker can input a new message and get classification results in several categories, it also display visualizations of the data.
-
+The goal of this project is to apply my data engineering and software skills by analyzing disaster dataset from [Figure Eight](https://www.figure-eight.com/). It is a web app where an emergency worker can input a new message about the event and get classification results in several categories so that the message can be sent to an ppropriate disaster relief agency.
  ## About the Data:
 [Figure Eight](https://www.figure-eight.com/) is used for this project. It contains real messages that were sent during disaster events which will be used to develop a machine learning pipeline to categorize these events so that we can send the messages to an appropriate disaster relief agency.
  
