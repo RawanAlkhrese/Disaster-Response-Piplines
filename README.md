@@ -21,7 +21,7 @@ The goal of this project is to apply my data engineering and software skills by 
  
  ### -2 **data:**
  - **DisasterResponse.db:** the database the contain data table.
- - **disaster_categories.csv:** csv file contains the catogry names. 
+ - **disaster_categories.csv:** csv file contains the categories. 
  - **disaster_messages.csv:** csv file contains the messages with extra information. 
  - **process_data.py:** ETL python script to preprocess the data.
  
